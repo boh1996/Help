@@ -1,2 +1,3 @@
 # Help
-Help
+
+a [Sails](http://sailsjs.org) application
