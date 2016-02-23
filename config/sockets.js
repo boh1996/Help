@@ -12,6 +12,24 @@
 
 module.exports.sockets = {
 
+   onConnect: function(session, socket) {
+
+    // By default, do nothing.
+
+  },
+
+
+  /***************************************************************************
+  *                                                                          *
+  * This custom onDisconnect function will be run each time a socket         *
+  * disconnects                                                              *
+  *                                                                          *
+  ***************************************************************************/
+  onDisconnect: function(session, socket) {
+
+    // By default: do nothing.
+  },
+
 
   /***************************************************************************
   *                                                                          *

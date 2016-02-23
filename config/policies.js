@@ -19,6 +19,20 @@
 
 module.exports.policies = {
 
+  '*': [ 'basicAuth', 'passport', 'sessionAuth' ],
+ 
+  AuthController: {
+    '*': [ 'passport' ]
+  },
+
+  UserController: {
+    'create': true
+  },
+
+  'auth': {
+    '*': true
+  }
+
   /***************************************************************************
   *                                                                          *
   * Default policy for all controllers and actions (`true` allows public     *
